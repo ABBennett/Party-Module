@@ -5,10 +5,10 @@ module Invitee
 end
 
 module PartyGoer
-attr_reader :drink_count
-def initialize
-  @drink_count = 0
-end
+  attr_reader :drink_count
+  def initialize
+    @drink_count = 0
+  end
 
   def drink
     if @drink_count >= 2
@@ -30,6 +30,7 @@ end
   def self.invited?
     true
   end
+  
 end
 
 class PersonalizedHavocError < StandardError; end
